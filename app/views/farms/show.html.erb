@@ -1,70 +1,45 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Farm -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
 
-<p>
-  <b>Name:</b>
-  <%= @farm.name %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @farm.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:street) %>:</strong></dt>
+  <dd><%= @farm.street %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:city) %>:</strong></dt>
+  <dd><%= @farm.city %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:state) %>:</strong></dt>
+  <dd><%= @farm.state %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:zip) %>:</strong></dt>
+  <dd><%= @farm.zip %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
+  <dd><%= @farm.user_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:crops) %>:</strong></dt>
+  <dd><%= @farm.crops %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:growing_season) %>:</strong></dt>
+  <dd><%= @farm.growing_season %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:size_in_acres) %>:</strong></dt>
+  <dd><%= @farm.size_in_acres %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:type_of_farm) %>:</strong></dt>
+  <dd><%= @farm.type_of_farm %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:website) %>:</strong></dt>
+  <dd><%= @farm.website %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:hours_of_operation) %>:</strong></dt>
+  <dd><%= @farm.hours_of_operation %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:volunteers_needed) %>:</strong></dt>
+  <dd><%= @farm.volunteers_needed %></dd>
+</dl>
 
-<p>
-  <b>Street:</b>
-  <%= @farm.street %>
-</p>
-
-<p>
-  <b>City:</b>
-  <%= @farm.city %>
-</p>
-
-<p>
-  <b>State:</b>
-  <%= @farm.state %>
-</p>
-
-<p>
-  <b>Zip:</b>
-  <%= @farm.zip %>
-</p>
-
-<p>
-  <b>User:</b>
-  <%= @farm.user_id %>
-</p>
-
-<p>
-  <b>Crops:</b>
-  <%= @farm.crops %>
-</p>
-
-<p>
-  <b>Growing season:</b>
-  <%= @farm.growing_season %>
-</p>
-
-<p>
-  <b>Size in acres:</b>
-  <%= @farm.size_in_acres %>
-</p>
-
-<p>
-  <b>Type of farm:</b>
-  <%= @farm.type_of_farm %>
-</p>
-
-<p>
-  <b>Website:</b>
-  <%= @farm.website %>
-</p>
-
-<p>
-  <b>Hours of operation:</b>
-  <%= @farm.hours_of_operation %>
-</p>
-
-<p>
-  <b>Volunteers needed:</b>
-  <%= @farm.volunteers_needed %>
-</p>
-
-
-<%= link_to 'Edit', edit_farm_path(@farm) %> |
-<%= link_to 'Back', farms_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              farms_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_farm_path(@farm), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              farm_path(@farm),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>
