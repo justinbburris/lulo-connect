@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121201184824) do
+ActiveRecord::Schema.define(:version => 20121201230427) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -27,6 +27,24 @@ ActiveRecord::Schema.define(:version => 20121201184824) do
   add_index "active_admin_comments", ["author_type", "author_id"], :name => "index_active_admin_comments_on_author_type_and_author_id"
   add_index "active_admin_comments", ["namespace"], :name => "index_active_admin_comments_on_namespace"
   add_index "active_admin_comments", ["resource_type", "resource_id"], :name => "index_admin_notes_on_resource_type_and_resource_id"
+
+  create_table "farms", :force => true do |t|
+    t.string   "name"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "zip"
+    t.integer  "user_id"
+    t.text     "crops"
+    t.string   "growing_season"
+    t.integer  "size_in_acres"
+    t.string   "type_of_farm"
+    t.string   "website"
+    t.text     "hours_of_operation"
+    t.boolean  "volunteers_needed"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
 
   create_table "installs", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
