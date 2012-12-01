@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  street: MyString
+  city: MyString
+  state: MyString
+  zip: 1
+  user_id: 1
+  crops: MyText
+  growing_season: MyString
+  size_in_acres: 1
+  type_of_farm: MyString
+  website: MyString
+  hours_of_operation: MyText
+  volunteers_needed: false
+
+two:
+  name: MyString
+  street: MyString
+  city: MyString
+  state: MyString
+  zip: 1
+  user_id: 1
+  crops: MyText
+  growing_season: MyString
+  size_in_acres: 1
+  type_of_farm: MyString
+  website: MyString
+  hours_of_operation: MyText
+  volunteers_needed: false

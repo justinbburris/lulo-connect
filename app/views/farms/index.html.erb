@@ -1,0 +1,47 @@
+<h1>Listing farms</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Street</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>User</th>
+    <th>Crops</th>
+    <th>Growing season</th>
+    <th>Size in acres</th>
+    <th>Type of farm</th>
+    <th>Website</th>
+    <th>Hours of operation</th>
+    <th>Volunteers needed</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @farms.each do |farm| %>
+  <tr>
+    <td><%= farm.name %></td>
+    <td><%= farm.street %></td>
+    <td><%= farm.city %></td>
+    <td><%= farm.state %></td>
+    <td><%= farm.zip %></td>
+    <td><%= farm.user_id %></td>
+    <td><%= farm.crops %></td>
+    <td><%= farm.growing_season %></td>
+    <td><%= farm.size_in_acres %></td>
+    <td><%= farm.type_of_farm %></td>
+    <td><%= farm.website %></td>
+    <td><%= farm.hours_of_operation %></td>
+    <td><%= farm.volunteers_needed %></td>
+    <td><%= link_to 'Show', farm %></td>
+    <td><%= link_to 'Edit', edit_farm_path(farm) %></td>
+    <td><%= link_to 'Destroy', farm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Farm', new_farm_path %>

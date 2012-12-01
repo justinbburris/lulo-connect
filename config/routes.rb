@@ -1,4 +1,7 @@
 LuloConnect::Application.routes.draw do
+  resources :farms
+
+
   devise_for :users
 
   devise_for :installs

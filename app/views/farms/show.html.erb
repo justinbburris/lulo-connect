@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @farm.name %>
+</p>
+
+<p>
+  <b>Street:</b>
+  <%= @farm.street %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @farm.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @farm.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @farm.zip %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @farm.user_id %>
+</p>
+
+<p>
+  <b>Crops:</b>
+  <%= @farm.crops %>
+</p>
+
+<p>
+  <b>Growing season:</b>
+  <%= @farm.growing_season %>
+</p>
+
+<p>
+  <b>Size in acres:</b>
+  <%= @farm.size_in_acres %>
+</p>
+
+<p>
+  <b>Type of farm:</b>
+  <%= @farm.type_of_farm %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @farm.website %>
+</p>
+
+<p>
+  <b>Hours of operation:</b>
+  <%= @farm.hours_of_operation %>
+</p>
+
+<p>
+  <b>Volunteers needed:</b>
+  <%= @farm.volunteers_needed %>
+</p>
+
+
+<%= link_to 'Edit', edit_farm_path(@farm) %> |
+<%= link_to 'Back', farms_path %>
