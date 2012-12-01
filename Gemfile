@@ -30,6 +30,9 @@ gem 'less-rails-bootstrap'
 group :development do
   gem 'yaml_db'
 end
+
+gem "friendly_id", "~> 4.0.1"
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
