@@ -16,83 +16,25 @@
 
 <!-- List -->
 <section id="locations-list">
-  <!-- template
-       <article class="location type-TYPE">
-         <div class="popup">
-           <div class="name">Truly Living Well</div>
-           <div class="address">3353 Washington Rd.</div>
-           <div class="city">East Point</div>
-           <div class="state">Georgia</div>
-           <div class="zip">30364</div>
-           <div class="telephone">(678)973-0997</div>
-         </div>
-         <div class="meta">
-           <div class="lat">33.664491</div>
-           <div class="lon">-84.468126</div>
-           <div class="type">Community Farm</div>
-         </div>
-       </article>
-       -->
-       <article class="location type-garden">
-         <div class="popup">
-           <div class="name">Truly Living Well</div>
-           <div class="address">3353 Washington Rd.</div>
-           <div class="city">East Point</div>
-           <div class="state">Georgia</div>
-           <div class="zip">30364</div>
-           <div class="telephone">(678)973-0997</div>
-         </div>
-         <div class="meta">
-           <div class="lat">33.664491</div>
-           <div class="lon">-84.468126</div>
-           <div class="type">Community Garden</div>
-         </div>
-       </article>
-       <article class="location type-garden">
-         <div class="popup">
-           <div class="name">Truly Living Well</div>
-           <div class="address">1856 Harbin Rd.</div>
-           <div class="city">Atlanta</div>
-           <div class="state">Georgia</div>
-           <div class="zip">30311</div>
-           <div class="telephone">(678)973-0997</div>
-         </div>
-         <div class="meta">
-           <div class="lat">33.704919</div>
-           <div class="lon">-84.480727</div>
-           <div class="type">Community Garden</div>
-         </div>
-       </article>
-       <article class="location type-market">
-         <div class="popup">
-           <div class="name">Sweet Auburn Curb Market</div>
-           <div class="address">209 Edgewood Avenue Southeast</div>
-           <div class="city">Atlanta</div>
-           <div class="state">Georgia</div>
-           <div class="zip">30303</div>
-           <div class="telephone">(404) 659-1665</div>
-         </div>
-         <div class="meta">
-           <div class="lat">33.754076</div>
-           <div class="lon">-84.379967</div>
-           <div class="type">Farmers Market</div>
-         </div>
-       </article>
-       <article class="location type-market">
-         <div class="popup">
-           <div class="name">Morningside Farmers' Market</div>
-           <div class="address">1391 N. Highland Avenue</div>
-           <div class="city">Atlanta</div>
-           <div class="state">Georgia</div>
-           <div class="zip">30306</div>
-           <div class="telephone"></div>
-         </div>
-         <div class="meta">
-           <div class="lat">33.792477</div>
-           <div class="lon">-84.352379</div>
-           <div class="type">Farmers Market</div>
-         </div>
-       </article>
+  <% collection.each do |loc| %>
+    <article class='location type-<%= loc.type_of_farm -%>'>
+      <div class='popup'>
+        <div class="name"><%= loc.name -%></div>
+        <div class="address"><%= loc.street -%></div>
+        <div class="city"><%= loc.city -%></div>
+        <div class="state"><%= loc.state -%></div>
+        <div class="zip"><%= loc.zip -%></div>
+        <%# TODO: Add telephone field %>
+        <div class="telephone">(678)973-0997</div>
+      </div>
+      <div class='meta'>
+        <div class="lat"><%= loc.latitude.to_s -%></div>
+        <div class="lon"><%= loc.longitude.to_s -%></div>
+        <%# TODO: Fix this to be more generic -%>
+        <div class="type"><%= loc.type_of_farm -%></div>
+      </div>
+    </article>
+  <% end %>
 </section>
 
 <!-- Map -->
