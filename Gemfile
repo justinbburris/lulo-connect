@@ -11,6 +11,8 @@ gem 'devise'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
 
+gem 'carmen-rails', '~> 1.0.0.beta3' # state lookup
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

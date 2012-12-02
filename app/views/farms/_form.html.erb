@@ -42,7 +42,7 @@
       <div class="control-group">
         <%= f.label :state, :class => 'control-label' %>
         <div class="controls">
-          <%= f.text_field :state, :class => 'text_field' %>
+          <%= subregion_select(:order, :state, 'US') -%>
         </div>
       </div>
       <div class="control-group">
