@@ -26,7 +26,7 @@
   </div>
 
   <div class='span6'>
-    <%= render partial: 'map', collection: @farms -%>
+    <%= render partial: 'map', locals: { locations: @farms } -%>
     <br>
   </div>
 </div>
