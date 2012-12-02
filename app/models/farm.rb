@@ -6,4 +6,9 @@ class Farm < ActiveRecord::Base
 
   belongs_to :user
 
+  validates_presence_of :name, :street, :city, :state, :zip, :type_of_farm, :user_id, :volunteers_needed
+
+  validates :name, :uniqueness => true
+
+  FARM_TYPES = ['Co-op', 'Community Garden', 'Subscription', 'Other']
 end

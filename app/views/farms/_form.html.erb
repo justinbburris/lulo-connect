@@ -1,34 +1,59 @@
 <%= form_for @farm, :html => { :class => 'form-horizontal' } do |f| %>
-  <div class="control-group">
-    <%= f.label :name, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :name, :class => 'text_field' %>
+  <fieldset>
+    <legend>Basic information</legened>
+  </fieldset>
+
+  <div class='row'>
+    <div class='span5'>
+      <div class="control-group">
+        <%= f.label :name, :class => 'control-label' %>
+        <div class="controls">
+          <%= f.text_field :name, :class => 'text_field' %>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= f.label :type_of_farm, :class => 'control-label' %>
+        <div class="controls">
+          <%= select_tag "search", options_for_select(Farm::FARM_TYPES.collect{|m| [m.titleize, m]}) %>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= f.label :volunteers_needed, :class => 'control-label' %>
+        <div class="controls">
+          <%= f.check_box :volunteers_needed, :class => 'check_box' %>
+        </div>
+      </div>
+
+    </div>
+
+    <div class='span5'>
+      <div class="control-group">
+        <%= f.label :street, :class => 'control-label' %>
+        <div class="controls">
+          <%= f.text_field :street, :class => 'text_field' %>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= f.label :city, :class => 'control-label' %>
+        <div class="controls">
+          <%= f.text_field :city, :class => 'text_field' %>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= f.label :state, :class => 'control-label' %>
+        <div class="controls">
+          <%= f.text_field :state, :class => 'text_field' %>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= f.label :zip, :class => 'control-label' %>
+        <div class="controls">
+          <%= f.number_field :zip, :class => 'number_field' %>
+        </div>
+      </div>      
     </div>
   </div>
-  <div class="control-group">
-    <%= f.label :street, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :street, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :city, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :city, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :state, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :state, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :zip, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.number_field :zip, :class => 'number_field' %>
-    </div>
-  </div>
+
   <div class="control-group">
     <%= f.label :crops, :class => 'control-label' %>
     <div class="controls">
@@ -48,12 +73,6 @@
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :type_of_farm, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :type_of_farm, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
     <%= f.label :website, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :website, :class => 'text_field' %>
@@ -63,12 +82,6 @@
     <%= f.label :hours_of_operation, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_area :hours_of_operation, :class => 'text_area' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :volunteers_needed, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.check_box :volunteers_needed, :class => 'check_box' %>
     </div>
   </div>
 
