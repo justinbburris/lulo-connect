@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121202132951) do
+ActiveRecord::Schema.define(:version => 20121202150824) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(:version => 20121202132951) do
   add_index "installs", ["reset_password_token"], :name => "index_installs_on_reset_password_token", :unique => true
 
   create_table "plants", :force => true do |t|
-    t.string   "type"
+    t.string   "plant_type"
     t.string   "name"
     t.string   "best_location"
     t.text     "planting_instructions"
@@ -79,7 +79,10 @@ ActiveRecord::Schema.define(:version => 20121202132951) do
     t.text     "pests"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
+    t.string   "slug"
   end
+
+  add_index "plants", ["slug"], :name => "index_plants_on_slug", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "",    :null => false
