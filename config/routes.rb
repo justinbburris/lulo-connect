@@ -1,6 +1,7 @@
 LuloConnect::Application.routes.draw do
-  resources :farms
+  resources :plants, only: [:index, :show]
 
+  resources :farms
 
   devise_for :users
 

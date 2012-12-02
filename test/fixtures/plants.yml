@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type: 
+  name: MyString
+  best_location: MyString
+  planting_instructions: MyText
+  harvest_instructions: MyText
+  plant_with: MyText
+  dont_plant_with: MyText
+  watering: MyString
+  pests: MyText
+
+two:
+  type: 
+  name: MyString
+  best_location: MyString
+  planting_instructions: MyText
+  harvest_instructions: MyText
+  plant_with: MyText
+  dont_plant_with: MyText
+  watering: MyString
+  pests: MyText
