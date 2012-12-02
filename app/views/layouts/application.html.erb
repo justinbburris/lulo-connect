@@ -25,14 +25,13 @@
       <div class="content">
         <%= render 'layouts/messages' %>
         <%= yield %>
-        <footer>
-        </footer>
       </div>
+      <footer class='footer'>
+        <p class='muted'>Copyright Lulo - 2012</p>
+      </footer>
     </div> <!--! end of .container -->
   </div>
 
-  <footer>
-  </footer>
   <%= javascript_include_tag "application" %>
   <%= yield :footer_scripts -%>
 </body>
