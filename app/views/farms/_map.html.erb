@@ -1,0 +1,100 @@
+<% content_for :head do -%>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
+  <%= stylesheet_link_tag 'map', :media => 'all' -%>
+<% end %>
+
+<% content_for :footer_scripts do -%>
+  <script src="http://cdn.leafletjs.com/leaflet-0.4/leaflet.js"></script>
+  <%= javascript_include_tag 'maps' -%>
+<% end %>
+
+<section id="filters">
+  <a href="map.html" class="all">Everything</a>
+  <a href="map.html" class="market">Farmers Markets</a>
+  <a href="map.html" class="garden">Community Gardens</a>
+</section>
+
+<!-- List -->
+<section id="locations-list">
+  <!-- template
+       <article class="location type-TYPE">
+         <div class="popup">
+           <div class="name">Truly Living Well</div>
+           <div class="address">3353 Washington Rd.</div>
+           <div class="city">East Point</div>
+           <div class="state">Georgia</div>
+           <div class="zip">30364</div>
+           <div class="telephone">(678)973-0997</div>
+         </div>
+         <div class="meta">
+           <div class="lat">33.664491</div>
+           <div class="lon">-84.468126</div>
+           <div class="type">Community Farm</div>
+         </div>
+       </article>
+       -->
+       <article class="location type-garden">
+         <div class="popup">
+           <div class="name">Truly Living Well</div>
+           <div class="address">3353 Washington Rd.</div>
+           <div class="city">East Point</div>
+           <div class="state">Georgia</div>
+           <div class="zip">30364</div>
+           <div class="telephone">(678)973-0997</div>
+         </div>
+         <div class="meta">
+           <div class="lat">33.664491</div>
+           <div class="lon">-84.468126</div>
+           <div class="type">Community Garden</div>
+         </div>
+       </article>
+       <article class="location type-garden">
+         <div class="popup">
+           <div class="name">Truly Living Well</div>
+           <div class="address">1856 Harbin Rd.</div>
+           <div class="city">Atlanta</div>
+           <div class="state">Georgia</div>
+           <div class="zip">30311</div>
+           <div class="telephone">(678)973-0997</div>
+         </div>
+         <div class="meta">
+           <div class="lat">33.704919</div>
+           <div class="lon">-84.480727</div>
+           <div class="type">Community Garden</div>
+         </div>
+       </article>
+       <article class="location type-market">
+         <div class="popup">
+           <div class="name">Sweet Auburn Curb Market</div>
+           <div class="address">209 Edgewood Avenue Southeast</div>
+           <div class="city">Atlanta</div>
+           <div class="state">Georgia</div>
+           <div class="zip">30303</div>
+           <div class="telephone">(404) 659-1665</div>
+         </div>
+         <div class="meta">
+           <div class="lat">33.754076</div>
+           <div class="lon">-84.379967</div>
+           <div class="type">Farmers Market</div>
+         </div>
+       </article>
+       <article class="location type-market">
+         <div class="popup">
+           <div class="name">Morningside Farmers' Market</div>
+           <div class="address">1391 N. Highland Avenue</div>
+           <div class="city">Atlanta</div>
+           <div class="state">Georgia</div>
+           <div class="zip">30306</div>
+           <div class="telephone"></div>
+         </div>
+         <div class="meta">
+           <div class="lat">33.792477</div>
+           <div class="lon">-84.352379</div>
+           <div class="type">Farmers Market</div>
+         </div>
+       </article>
+</section>
+
+<!-- Map -->
+<section id="locations-map">
+</section>
