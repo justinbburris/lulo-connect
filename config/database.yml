@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   host: localhost
-  username: wesbailey
+  username: jburris # TODO : Make this generic
   database: lulo-connect
 
 # Warning: The database defined as "test" will be erased and
