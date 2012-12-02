@@ -6,7 +6,7 @@ class FarmsController < InheritedResources::Base
   end
 
   def create
-    @farm = Farm.new(params[:project])
+    @farm = Farm.new(params[:farm])
     @farm.user = current_user
     create!
   end

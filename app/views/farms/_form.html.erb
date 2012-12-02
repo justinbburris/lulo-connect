@@ -23,7 +23,7 @@
       <div class="control-group">
         <%= f.label :type_of_farm, :class => 'control-label' %>
         <div class="controls">
-          <%= select_tag "search", options_for_select(Farm::FARM_TYPES.collect{|m| [m.titleize, m]}) %>
+          <%= f.select :type_of_farm, options_for_select(Farm::FARM_TYPES.collect{|m| [m.titleize, m]}) %>
         </div>
       </div>
       <div class="control-group">
@@ -56,7 +56,7 @@
       <div class="control-group">
         <%= f.label :state, :class => 'control-label' %>
         <div class="controls">
-          <%= subregion_select(:order, :state, 'US') -%>
+          <%= subregion_select(:farm, :state, 'US') -%>
         </div>
       </div>
       <div class="control-group">
