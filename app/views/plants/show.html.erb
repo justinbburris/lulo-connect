@@ -1,50 +1,37 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Plant -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
 
-<p>
-  <b>Type:</b>
-  <%= @plant.type %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:type) %>:</strong></dt>
+  <dd><%= @plant.type %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @plant.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:best_location) %>:</strong></dt>
+  <dd><%= @plant.best_location %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:planting_instructions) %>:</strong></dt>
+  <dd><%= @plant.planting_instructions %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:harvest_instructions) %>:</strong></dt>
+  <dd><%= @plant.harvest_instructions %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:plant_with) %>:</strong></dt>
+  <dd><%= @plant.plant_with %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:dont_plant_with) %>:</strong></dt>
+  <dd><%= @plant.dont_plant_with %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:watering) %>:</strong></dt>
+  <dd><%= @plant.watering %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:pests) %>:</strong></dt>
+  <dd><%= @plant.pests %></dd>
+</dl>
 
-<p>
-  <b>Name:</b>
-  <%= @plant.name %>
-</p>
-
-<p>
-  <b>Best location:</b>
-  <%= @plant.best_location %>
-</p>
-
-<p>
-  <b>Planting instructions:</b>
-  <%= @plant.planting_instructions %>
-</p>
-
-<p>
-  <b>Harvest instructions:</b>
-  <%= @plant.harvest_instructions %>
-</p>
-
-<p>
-  <b>Plant with:</b>
-  <%= @plant.plant_with %>
-</p>
-
-<p>
-  <b>Dont plant with:</b>
-  <%= @plant.dont_plant_with %>
-</p>
-
-<p>
-  <b>Watering:</b>
-  <%= @plant.watering %>
-</p>
-
-<p>
-  <b>Pests:</b>
-  <%= @plant.pests %>
-</p>
-
-
-<%= link_to 'Edit', edit_plant_path(@plant) %> |
-<%= link_to 'Back', plants_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              plants_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_plant_path(@plant), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              plant_path(@plant),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>
