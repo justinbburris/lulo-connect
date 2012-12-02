@@ -1,0 +1,53 @@
+<%= form_for(@plant) do |f| %>
+  <% if @plant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plant.errors.count, "error") %> prohibited this plant from being saved:</h2>
+
+      <ul>
+      <% @plant.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :best_location %><br />
+    <%= f.text_field :best_location %>
+  </div>
+  <div class="field">
+    <%= f.label :planting_instructions %><br />
+    <%= f.text_area :planting_instructions %>
+  </div>
+  <div class="field">
+    <%= f.label :harvest_instructions %><br />
+    <%= f.text_area :harvest_instructions %>
+  </div>
+  <div class="field">
+    <%= f.label :plant_with %><br />
+    <%= f.text_area :plant_with %>
+  </div>
+  <div class="field">
+    <%= f.label :dont_plant_with %><br />
+    <%= f.text_area :dont_plant_with %>
+  </div>
+  <div class="field">
+    <%= f.label :watering %><br />
+    <%= f.text_field :watering %>
+  </div>
+  <div class="field">
+    <%= f.label :pests %><br />
+    <%= f.text_area :pests %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+<h1>Listing plants</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Name</th>
+    <th>Best location</th>
+    <th>Planting instructions</th>
+    <th>Harvest instructions</th>
+    <th>Plant with</th>
+    <th>Dont plant with</th>
+    <th>Watering</th>
+    <th>Pests</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @plants.each do |plant| %>
+  <tr>
+    <td><%= plant.type %></td>
+    <td><%= plant.name %></td>
+    <td><%= plant.best_location %></td>
+    <td><%= plant.planting_instructions %></td>
+    <td><%= plant.harvest_instructions %></td>
+    <td><%= plant.plant_with %></td>
+    <td><%= plant.dont_plant_with %></td>
+    <td><%= plant.watering %></td>
+    <td><%= plant.pests %></td>
+    <td><%= link_to 'Show', plant %></td>
+    <td><%= link_to 'Edit', edit_plant_path(plant) %></td>
+    <td><%= link_to 'Destroy', plant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Plant', new_plant_path %>

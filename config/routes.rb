@@ -1,4 +1,7 @@
 LuloConnect::Application.routes.draw do
+  resources :plants
+
+
   resources :farms
 
 
