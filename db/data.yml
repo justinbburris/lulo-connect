@@ -1,0 +1,341 @@
+
+plants:
+  columns:
+  - id
+  - plant_type
+  - name
+  - best_location
+  - planting_instructions
+  - harvest_instructions
+  - plant_with
+  - dont_plant_with
+  - watering
+  - pests
+  - created_at
+  - updated_at
+  - slug
+  records: 
+  - - '1'
+    - Vegetable
+    - Carrots
+    - Open, sunny, well drained.
+    - Grows well in an open, well drained area. Vegetable grows well in most reasonable
+      garden soil, be sure to remove the majority of stones. Dig in approximately
+      two inches of compost, and space seeds in rows 1-4 inches apart and about 1/4
+      inches deep. Water regularly and keep weeded. Plant grows best when seeded between
+      April and mid July.
+    - For baby vegetables pull the whole plant when they are 3/4 inch thick. Larger
+      ones can be harvested at any time. Wash the dirt off by immersing in a bucket
+      filled with water.
+    - ! 'bean, leek, onion, pea, radish, tomato. '
+    - strawberry, tomato, grape
+    - Water regularly, preferably with drip irrigation.
+    - Carrot fly (use remay; make sure it is secure to the ground using wood or rocks).
+      Overhead watering attracts the fly.
+    - '2012-12-02 16:23:57.32556'
+    - '2012-12-02 16:23:57.32556'
+    - carrots
+  - - '2'
+    - Vegetable
+    - Beans
+    - Open, sunny area
+    - Grows best in an open sunny area. Before planting dig in a few inched of horse
+      manure or compost. Space stakes in rows approximately 3 inches from one another,
+      placing 5 to 8 seeds at the bottom of each stake. Keep plants weeded, especially
+      while small.
+    - Pick your string or snap varieties every few days by pulling the pod with one
+      hand while holding the plant with the other. Do not harvest if plants are wet
+      as they will not store well. Smaller vegetables taste more tender. Dried varieties
+      need to be harvested when the plant has matured fully. Shell the pods, then
+      make sure they are thoroughly dried before storing them.
+    - ! 'beet, cabbage, carrot, corn, squash, tomato. '
+    - chive, fennel, garlic, leek
+    - Do not water seeds until they have sprouted. Water regularly after that.
+    - These plants need good air circulation. Do not harvest or work around them when
+      plants are wet, this may spread disease.
+    - '2012-12-02 16:26:56.86344'
+    - '2012-12-02 16:26:56.86344'
+    - beans
+  - - '3'
+    - Vegetable
+    - Corn
+    - Well drained, sunny hillside.
+    - Seeds grow best in a well drained sunny environment. Dig in 1 inch of compost
+      before planting. Space seeds in rows approximately 4 to 6 inches apart, and
+      plant about 1 inch deep. Plant seed near the end of May (or when temperatures
+      are warm). Water regularly; plant soybeans between corn plants once they are
+      about an inch high.
+    - Once the cob is falling away from the stalk it is ready to harvest. Pull the
+      cob downward and twist until it breaks away form the stalk.
+    - ! "bean, pea, squash\r\n"
+    - ''
+    - Water regularly, if sprinkling, make sure soil is well watered.
+    - Use 4 year rotation, compost stalks.
+    - '2012-12-02 16:28:54.505862'
+    - '2012-12-02 16:28:54.505862'
+    - corn
+  - - '4'
+    - Vegetable
+    - Cucumbers
+    - Needs good drainage. Can be grown outside or in greenhouse.
+    - Grows best in warm, rich, well drained soil. Cucumbers require support, therefore
+      staking would be beneficial. Space stakes 6 inches, and plant approximately
+      3 seeds at the bottom of each stake. Be sure to soak seeds in water before planting.
+      Cucumbers also require alot of watering, so be sure to water them daily by hand
+      rather than sprinkling.
+    - When plants are 6-12 inches long cut the fruit with a knife. It you twist it
+      off you may break the stalk which may kill the plant. Harvest in the morning
+      when it is cool. Picking when young will encourage more fruit.
+    - ! "bean, broccoli, cabbage, lettuce, pea, radish, tomato\r\n"
+    - sage
+    - Need lots of water, deep watering rather than frequent sprinkles is best. If
+      weather is warm water every second day if plants are in the greenhouse.
+    - ! "If diseased do not compost plants.\r\nAphids – control when first appear,
+      by spraying with water."
+    - '2012-12-02 16:31:01.581801'
+    - '2012-12-02 16:31:01.581801'
+    - cucumbers
+  - - '5'
+    - Vegetable
+    - Eggplant
+    - Well drained, sunny, warm location.
+    - Plants grow best in well watered, warm areas. Be sure to plant in well composted
+      soil to ensure nutrients. Plant seeds in rows, roughly 12 inches apart and about
+      1 inch deep. Be sure to water often (approx. 2x daily) and keep seeded while
+      small.
+    - Fruit should be gathered when the surface is very glossy, and before it begins
+      to assume a dull finish. Cut fruit with a knife leaving a 1/2 inch of stem,
+      do not pull or twist.
+    - pea, thyme, tarragon
+    - ''
+    - Require lots of water.
+    - ! 'flea beetles, lacebug, aphids, Colorado potato beetle, red spider. Use rotation. '
+    - '2012-12-02 16:33:18.972926'
+    - '2012-12-02 16:33:18.972926'
+    - eggplant
+  - - '6'
+    - Vegetable
+    - Onions
+    - Moist (not wet) location that is also well-drained and reasonably free from
+      stones.
+    - Onions grow well in areas that are moist and reasonably free of stone. Plant
+      seeds in 3 to 4 inches of compost, and place seeds 4 to 6 inches apart, planting
+      about 5 seeds in each hole. During the early stages water about 2 times per
+      day, and stop watering once the tops of the plants begin to turn brown.
+    - As the plants mature, the tops will fall to the ground. When 25-50% of the tops
+      fall over, lay the rest down with a rake to hasten bulbs to maturity. After
+      a day or two, pull the bulbs and spread out on the ground in the sun and allow
+      them to remain there for 2 days. Then cut the tops an inch above the bulbs.
+    - ! "beet, cabbage, carrot, lettuce, potato, tomato\r\n"
+    - bean, peas
+    - During early stages they require an abundance of water. Do not water once tops
+      start turning brown (early August).
+    - Very few diseases. Use rotation and destroy any plants that are infected.
+    - '2012-12-02 16:35:00.450929'
+    - '2012-12-02 16:35:00.450929'
+    - onions
+  - - '7'
+    - Vegetable
+    - Bell Peppers
+    - Very sunny, well drained and open.
+    - First, the seeds need to germinate (meaning, become sprouts) indoors in pots
+      at temperatures above 70 degrees F. They will need about 8-10 weeks. Put fertilizer
+      in your garden soil a week before moving seedlings from pots to the outdoors.
+      When there is no danger of frost, grow in a sunny, well drained area with loamy
+      soil (meaning it is equal parts sand, clay, and gravel). The soil should not
+      be too rich. Plant seedlings 12 inches apart or in pairs. The bell peppers will
+      mature in 50 to 70 days.
+    - When fruit is firm it is ready to pick; fruit will ripen further to red or yellow
+      skin; once they are harvested more fruit will form.
+    - basil, carrot, onion, oregano, marjoram
+    - fennel
+    - Need to have regular watering during early stage of growth, once the plant is
+      established less water is needed.
+    - ! 'Cutworms: use collars at plant base. Use crop rotation.'
+    - '2012-12-02 16:37:05.977987'
+    - '2012-12-02 16:37:05.977987'
+    - bell-peppers
+  - - '8'
+    - Vegetable
+    - Squash
+    - Well drained, sandy location where soil is warm.
+    - ! "First, seeds need to germinate (meaning, become sprouts) indoors at temperatures
+      between 55 and 60 ° F for 2 to 4 weeks. It is okay to seed any time between
+      one week after the last spring frost to midsummer. \r\nPut fertilizer into soil
+      before planting. Plant seeds 1 inch deep and 2 to 3 feet apart in full sun in
+      moist but well drained soil. Be careful not to damage root ball as the sprouts
+      are transplanted. \r\nThe squash will mature 60 days after planting. Be sure
+      to cut off the squash instead of breaking it off."
+    - ! 'Summer (zucchini): fruit grows quickly so harvest every few days. When fruit
+      is 8 inches long cut with a knife 2 inches from the end of the fruit; do not
+      twist off or you can harm the plant.  Winter: harvest when skin is hard; if
+      your thumbnail does not leave a mark on the skin they are ready to harvest.
+      Cure by leaving fruit in the sun for a few days; turn every few hours and cover
+      if left out at night.'
+    - bean, corn, mint, nasturtium, radish
+    - potato for summer squash
+    - ! 'Require regular watering. To know when to water, use the finger method: put
+      your finger in the soil, and if it is dry past the first joint then water.'
+    - ''
+    - '2012-12-02 16:39:18.966905'
+    - '2012-12-02 16:39:18.966905'
+    - squash
+  - - '9'
+    - Vegetable
+    - Tomato
+    - Open, sunny area
+    - Plant seeds to germinate (meaning, grow into sprouts) indoors 6 to 8 weeks before
+      the average last spring frost date. Two weeks before transplanting, mix in fertilizer
+      into the soil. Plant after last frost date. Establish stakes in the soil at
+      the time of planting and plant two feet apart. Pinch off a few of the lower
+      branches on transplants, and plant the root ball deep enough so that the lowest
+      leaves are just above the surface of the soil. Water well immediately after
+      planting to reduce shock to the plant.
+    - Pick fruits that firm and red, yellow or any other color the variety may be.
+      Green fruit can be harvested and will ripen inside your house.
+    - asparagus, basil, cabbage, carrot, onion, parsley, peas, sage
+    - fennel, potato
+    - Water deeply when weather is hot. If the fruit is splitting it is a sign they
+      are not getting enough water.
+    - Keep covered after July to avoid blight.
+    - '2012-12-02 16:44:28.933229'
+    - '2012-12-02 16:44:28.933229'
+    - tomato
+  - - '10'
+    - Herb
+    - Basil
+    - Direct sunlight and warmth
+    - Start seeds indoors 6 weeks before the last spring frost date. Plant in full
+      sun and moist, well-drained soil. Plant 1/4-inch deep and 10 to 12 inches apart.
+      If you plan on cooking with your basil, do not use fertilizers that leave harmful
+      residues. Make sure to pick the leaves during the summer to encourage growth.
+      After 6 weeks, pinch off the center shoot to prevent early flowering. Cut off
+      any flowers that grow. The best time to harvest is when the plants begin to
+      bud.
+    - ! 'Collect from the tops of the branches. Handle delicately as not to bruise
+      and blacken leaves. Begin using as soon as the plant is large enough to spare
+      some. '
+    - Tomato, asparagus, beans, beets, cabbage, chili and bell peppers, potatoes,
+      and oregano
+    - ''
+    - ! 'Water every week (more often if growing in outdoor containers or indoors).
+      Make sure to water at the base to avoid showering the leaves and stems. '
+    - ! "Discourages flies and mosquitoes. Targeted by slugs and aphids. \r\nSubject
+      to fungal diseases like gray mold and black spot."
+    - '2012-12-02 16:46:39.093697'
+    - '2012-12-02 16:46:39.093697'
+    - basil
+
+---
+farms:
+  columns:
+  - id
+  - name
+  - street
+  - city
+  - state
+  - zip
+  - user_id
+  - crops
+  - growing_season
+  - size_in_acres
+  - type_of_farm
+  - website
+  - hours_of_operation
+  - volunteers_needed
+  - created_at
+  - updated_at
+  - slug
+  - latitude
+  - longitude
+  records: 
+  - - '1'
+    - Lulo Garden
+    - 14th St
+    - Atlanta
+    - GA
+    - '30120'
+    - '1'
+    - ''
+    - ''
+    - 
+    - Community Garden
+    - ''
+    - ''
+    - true
+    - '2012-12-02 14:56:13.449375'
+    - '2012-12-02 17:20:20.293325'
+    - lulo-garden
+    - '33.786388'
+    - '-84.395084'
+  - - '2'
+    - Morningside Farmers' Market
+    - 1391 N. Highland Avenue
+    - Atlanta
+    - GA
+    - '30306'
+    - '1'
+    - ''
+    - ''
+    - 
+    - Other
+    - ''
+    - ''
+    - false
+    - '2012-12-02 16:57:22.83659'
+    - '2012-12-02 17:14:42.327313'
+    - morningside-farmers-market
+    - '33.792477'
+    - '-84.352379'
+  - - '3'
+    - Piedmont Park Green Market
+    - Tenth Street between Monroe Drive and Juniper Street
+    - Atlanta
+    - GA
+    - '30357'
+    - '1'
+    - ''
+    - ''
+    - 
+    - Co-op
+    - ''
+    - ''
+    - false
+    - '2012-12-02 16:58:24.508444'
+    - '2012-12-02 17:19:05.619127'
+    - piedmont-park-green-market
+    - '33.781484'
+    - '-84.370902'
+
+---
+markets:
+  columns:
+  - id
+  - name
+  - street
+  - city
+  - state
+  - zip
+  - user_id
+  - website
+  - hours_of_operation
+  - created_at
+  - updated_at
+  - slug
+  - latitude
+  - longitude
+  records: 
+  - - '1'
+    - Sweet Auburn Curb Market
+    - 209 Edgewood Avenue Southeast
+    - Atlanta
+    - GA
+    - '30303'
+    - 
+    - ''
+    - Monday-Saturday from 8:00am-6:00pm
+    - '2012-12-02 16:56:17.185785'
+    - '2012-12-02 16:56:17.185785'
+    - 
+    - 
+    - 

@@ -1,0 +1,42 @@
+<% content_for :head do -%>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
+  <%= stylesheet_link_tag 'map', :media => 'all' -%>
+<% end %>
+
+<% content_for :footer_scripts do -%>
+  <script src="http://cdn.leafletjs.com/leaflet-0.4/leaflet.js"></script>
+  <%= javascript_include_tag 'maps' -%>
+<% end %>
+
+<section id="filters">
+  <a href="map.html" class="all">Everything</a>
+  <a href="map.html" class="market">Farmers Markets</a>
+  <a href="map.html" class="garden">Community Gardens</a>
+</section>
+
+<!-- List -->
+<section id="locations-list">
+  <% locations.each do |loc| %>
+    <article class='location type-<%= loc.type_of_farm -%>'>
+      <div class='popup'>
+        <div class="name"><%= loc.name -%></div>
+        <div class="address"><%= loc.street -%></div>
+        <div class="city"><%= loc.city -%></div>
+        <div class="state"><%= loc.state -%></div>
+        <div class="zip"><%= loc.zip -%></div>
+        <%# TODO: Add telephone field %>
+        <div class="telephone">(678)973-0997</div>
+      </div>
+      <div class='meta'>
+        <div class="lat"><%= loc.latitude.to_s -%></div>
+        <div class="lon"><%= loc.longitude.to_s -%></div>
+        <%# TODO: Fix this to be more generic -%>
+        <div class="type"><%= loc.type_of_farm -%></div>
+      </div>
+    </article>
+  <% end %>
+</section>
+
+<!-- Map -->
+<section id="locations-map">
+</section>

@@ -25,24 +25,27 @@
     <% end %>
   </div>
 
-  <div class='span5'>
-    <table class="table table-condensed">
-      <thead>
-        <tr>
-          <th><%= model_class.human_attribute_name(:name) %></th>
-          <th><%= model_class.human_attribute_name(:type_of_farm) %></th>
-          <th><%= model_class.human_attribute_name(:website) %></th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @farms.each do |farm| %>
-          <tr>
-            <td><%= link_to farm.name, farm_path(farm) %></td>
-            <td><%= farm.type_of_farm %></td>
-            <td><%= farm.website %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
+  <div class='span6'>
+    <%= render partial: 'map', locals: { locations: @farms } -%>
+    <br>
   </div>
 </div>
+
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:type_of_farm) %></th>
+      <th><%= model_class.human_attribute_name(:website) %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @farms.each do |farm| %>
+      <tr>
+        <td><%= link_to farm.name, farm_path(farm) %></td>
+        <td><%= farm.type_of_farm %></td>
+        <td><%= farm.website %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

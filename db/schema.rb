@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121202153329) do
+ActiveRecord::Schema.define(:version => 20121202165148) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -42,9 +42,11 @@ ActiveRecord::Schema.define(:version => 20121202153329) do
     t.string   "website"
     t.text     "hours_of_operation"
     t.boolean  "volunteers_needed"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.datetime "created_at",                                       :null => false
+    t.datetime "updated_at",                                       :null => false
     t.string   "slug"
+    t.decimal  "latitude",           :precision => 8, :scale => 6
+    t.decimal  "longitude",          :precision => 8, :scale => 6
   end
 
   add_index "farms", ["slug"], :name => "index_farms_on_slug", :unique => true
@@ -76,8 +78,11 @@ ActiveRecord::Schema.define(:version => 20121202153329) do
     t.integer  "user_id"
     t.string   "website"
     t.text     "hours_of_operation"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.datetime "created_at",                                       :null => false
+    t.datetime "updated_at",                                       :null => false
+    t.string   "slug"
+    t.decimal  "latitude",           :precision => 8, :scale => 6
+    t.decimal  "longitude",          :precision => 8, :scale => 6
   end
 
   create_table "plants", :force => true do |t|
