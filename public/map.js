@@ -12,11 +12,49 @@ map = {
   },
 
   markers: function() {
+    // Icons
+    var communityGarden = L.icon({
+      iconUrl: 'images/icon-garden.png',
+      iconSize: [19, 47],
+      iconAnchor: [22, 94],
+      popupAnchor: [-3, -76],
+      shadowUrl: 'images/icon-shadow.png',
+      shadowSize: [34, 47],
+      shadowAnchor: [14, 94]
+    });
+    var farmersMarket = L.icon({
+      iconUrl: 'images/icon-market.png',
+      iconSize: [19, 47],
+      iconAnchor: [22, 94],
+      popupAnchor: [-3, -76],
+      shadowUrl: 'images/icon-shadow.png',
+      shadowSize: [34, 47],
+      shadowAnchor: [14, 94]
+    });
+
+    // Add markers
     $('#locations-list').children().each( function() {
+      // Pull meta and popup
       var lat = $(this).find('.lat').text();
       var lon = $(this).find('.lon').text();
+      var type = $(this).find('.type').text();
       var popup = $(this).find('.popup').html();
-      var marker = L.marker([lat, lon]).addTo(map);
+
+      // Associate a location type with an icon
+      switch (type) {
+        case 'Community Garden': 
+          var iconType = communityGarden;
+        break;
+        case 'Farmers Market': 
+          var iconType = farmersMarket;
+        break;
+        default:
+          var iconType = farmersMarket;
+        break;
+      }
+
+      // Add the marker
+      var marker = L.marker([lat, lon], {icon: iconType}).addTo(map);
       marker.bindPopup(popup);
     });
   },
