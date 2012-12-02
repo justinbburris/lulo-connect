@@ -11,7 +11,12 @@ gem 'devise'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
 
+gem 'jquery-rails'
+gem 'less-rails-bootstrap'
+
+gem 'carrierwave'
 gem 'carmen-rails', '~> 1.0.0.beta3' # state lookup
+gem "friendly_id", "~> 4.0.1"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -26,14 +31,9 @@ group :assets do
 
 end
 
-gem 'jquery-rails'
-gem 'less-rails-bootstrap'
-
 group :development do
   gem 'yaml_db'
 end
-
-gem "friendly_id", "~> 4.0.1"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

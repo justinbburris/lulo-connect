@@ -1,0 +1,30 @@
+<%- model_class = Plant -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:plant_type) %>:</strong></dt>
+  <dd><%= @plant.plant_type %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @plant.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:best_location) %>:</strong></dt>
+  <dd><%= @plant.best_location %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:planting_instructions) %>:</strong></dt>
+  <dd><%= @plant.planting_instructions %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:harvest_instructions) %>:</strong></dt>
+  <dd><%= @plant.harvest_instructions %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:plant_with) %>:</strong></dt>
+  <dd><%= @plant.plant_with %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:dont_plant_with) %>:</strong></dt>
+  <dd><%= @plant.dont_plant_with %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:watering) %>:</strong></dt>
+  <dd><%= @plant.watering %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:pests) %>:</strong></dt>
+  <dd><%= @plant.pests %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              plants_path, :class => 'btn'  %>
+</div>
