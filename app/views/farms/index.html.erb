@@ -18,7 +18,7 @@
         Add a garden
       <% end %>
 
-      <%= link_to '#', class: 'span2 create-tab' do -%>
+      <%= link_to new_market_path, class: 'span2 create-tab' do -%>
         <%= image_tag('MarketSymbol.png', :atl => 'Add your market') -%>
         Add a market
       <% end %>
@@ -37,7 +37,7 @@
       <tbody>
         <% @farms.each do |farm| %>
           <tr>
-            <td><%= link_to farm.name, farm_path(farm.name) %></td>
+            <td><%= link_to farm.name, farm_path(farm) %></td>
             <td><%= farm.type_of_farm %></td>
             <td><%= farm.website %></td>
           </tr>
