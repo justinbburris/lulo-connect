@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   host: localhost
-  username: jburris
+  username: wesbailey
   database: lulo-connect
 
 # Warning: The database defined as "test" will be erased and
@@ -15,7 +15,7 @@ development:
 test:
   adapter: postgresql
   host: localhost
-  username: jburris
+  username: wesbailey
   database: lulo-connect-test
 
 production:
