@@ -6,7 +6,7 @@ class Farm < ActiveRecord::Base
 
   belongs_to :user
 
-  validates_presence_of :name, :street, :city, :state, :zip, :type_of_farm, :user_id, :volunteers_needed
+  validates_presence_of :name, :city, :state, :zip, :type_of_farm, :user_id
 
   validates :name, :uniqueness => true
 

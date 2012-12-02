@@ -1,4 +1,13 @@
 <%= form_for @farm, :html => { :class => 'form-horizontal' } do |f| %>
+
+  <% if @farm.errors.present? %>
+    <div class="alert alert-error">
+      <% @farm.errors.full_messages.each do |msg| %>
+        <p><%= msg %></p>
+      <% end %>
+    </div>
+  <% end %>
+
   <fieldset>
     <legend>Basic information</legened>
   </fieldset>
