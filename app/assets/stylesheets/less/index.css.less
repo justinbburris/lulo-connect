@@ -5,6 +5,11 @@
 @contentColor: white;
 @backgroundColor: #E3E3E3;
 
+@softGreen: #ACC7AC;
+@mediumGreen: #E4F3E4;
+@hardGreen: #086D08;
+
+
 /* Site wide styles */
 body {
     background-color: @backgroundColor;
@@ -40,7 +45,20 @@ h1 {
     text-align: center;
 }
 
-/* Extractable CSS */
-label.inline {
-    margin-left: -20px;
+a.create-tab {
+    border: 1px solid @softGreen;
+    background: @mediumGreen;
+    border-radius: 5px;
+    color: green;
+    font-size: 18px;
+    font-weight: 200;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: -5px;
+    padding: 5px 0 5px 5px;
+    text-decoration: none;
+}
+
+a.create-tab img {
+    height: 40px;
 }

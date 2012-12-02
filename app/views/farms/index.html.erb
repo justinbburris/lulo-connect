@@ -4,7 +4,25 @@
 </div>
 <div class='row'>
   <div class='span2 well'>
-    content
+    <form class='form-horizontal'>
+      <label class="checkbox">
+        <input type="checkbox" id="inlineCheckbox1" value="option1">Community Gardens
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" id="inlineCheckbox2" value="option2">Farmers Markets
+      </label>
+    </form>
+    <% if user_signed_in? %>
+      <%= link_to new_farm_path, class: 'span2 create-tab' do -%>
+        <%= image_tag('GardenSymbol.png', :atl => 'Add your garden') -%>
+        Add a garden
+      <% end %>
+
+      <%= link_to '#', class: 'span2 create-tab' do -%>
+        <%= image_tag('MarketSymbol.png', :atl => 'Add your market') -%>
+        Add a market
+      <% end %>
+    <% end %>
   </div>
 
   <div class='span5'>
