@@ -13,7 +13,7 @@
   <tbody>
     <% @plants.each do |plant| %>
       <tr>
-        <td><%= plant.name %></td>
+        <td><%= link_to plant.name, plant_path(plant) %></td>
         <td><%= plant.plant_type %></td>
         <td><%= plant.best_location %></td>
       </tr>
