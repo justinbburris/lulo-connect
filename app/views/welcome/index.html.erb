@@ -1,1 +1,11 @@
-<h1>Hello!</h1>
+<div class="hero-unit jumbotron">
+  <%= image_tag 'LuloLogo.png', :alt => 'Lulo - Connecting Communities with Community Gardens' -%>
+  <p>Connecting Communities with Community Gardens</p>
+
+  <div class='row'>
+    <%= link_to image_tag('GrowButton.png', :alt => 'Discover How to Grow Plants in your Local Community'), '#' -%>
+    <%= link_to image_tag('ConnectButton.png', :alt => 'Connect with Community Gardens'), farms_path -%>
+  </div>
+
+</div>
+
