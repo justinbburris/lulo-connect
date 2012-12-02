@@ -5,51 +5,19 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:street) %></th>
-      <th><%= model_class.human_attribute_name(:city) %></th>
-      <th><%= model_class.human_attribute_name(:state) %></th>
-      <th><%= model_class.human_attribute_name(:zip) %></th>
-      <th><%= model_class.human_attribute_name(:user_id) %></th>
-      <th><%= model_class.human_attribute_name(:crops) %></th>
-      <th><%= model_class.human_attribute_name(:growing_season) %></th>
-      <th><%= model_class.human_attribute_name(:size_in_acres) %></th>
       <th><%= model_class.human_attribute_name(:type_of_farm) %></th>
       <th><%= model_class.human_attribute_name(:website) %></th>
       <th><%= model_class.human_attribute_name(:hours_of_operation) %></th>
-      <th><%= model_class.human_attribute_name(:volunteers_needed) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @farms.each do |farm| %>
       <tr>
-        <td><%= link_to farm.id, farm_path(farm) %></td>
         <td><%= farm.name %></td>
-        <td><%= farm.street %></td>
-        <td><%= farm.city %></td>
-        <td><%= farm.state %></td>
-        <td><%= farm.zip %></td>
-        <td><%= farm.user_id %></td>
-        <td><%= farm.crops %></td>
-        <td><%= farm.growing_season %></td>
-        <td><%= farm.size_in_acres %></td>
         <td><%= farm.type_of_farm %></td>
         <td><%= farm.website %></td>
         <td><%= farm.hours_of_operation %></td>
-        <td><%= farm.volunteers_needed %></td>
-        <td><%=l farm.created_at %></td>
-        <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_farm_path(farm), :class => 'btn btn-mini' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      farm_path(farm),
-                      :method => :delete,
-                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-                      :class => 'btn btn-mini btn-danger' %>
-        </td>
       </tr>
     <% end %>
   </tbody>
