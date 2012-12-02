@@ -23,7 +23,12 @@
           <%= f.check_box :volunteers_needed, :class => 'check_box' %>
         </div>
       </div>
-
+      <div class="control-group">
+        <%= f.label :website, :class => 'control-label' %>
+        <div class="controls">
+          <%= f.text_field :website, :class => 'text_field' %>
+        </div>
+      </div>
     </div>
 
     <div class='span5'>
@@ -53,38 +58,6 @@
       </div>      
     </div>
   </div>
-
-  <div class="control-group">
-    <%= f.label :crops, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_area :crops, :class => 'text_area' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :growing_season, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :growing_season, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :size_in_acres, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.number_field :size_in_acres, :class => 'number_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :website, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :website, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :hours_of_operation, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_area :hours_of_operation, :class => 'text_area' %>
-    </div>
-  </div>
-
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
