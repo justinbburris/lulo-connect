@@ -2,27 +2,33 @@
 <div class="page-header">
   <h1><%=t 'farm_search', :default => model_class.model_name.human.pluralize %></h1>
 </div>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:type_of_farm) %></th>
-      <th><%= model_class.human_attribute_name(:website) %></th>
-      <th><%= model_class.human_attribute_name(:hours_of_operation) %></th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @farms.each do |farm| %>
-      <tr>
-        <td><%= farm.name %></td>
-        <td><%= farm.type_of_farm %></td>
-        <td><%= farm.website %></td>
-        <td><%= farm.hours_of_operation %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class='row'>
+  <div class='span2 well'>
+    content
+  </div>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_farm_path,
-            :class => 'btn btn-primary' %>
+  <div class='span5'>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th><%= model_class.human_attribute_name(:name) %></th>
+          <th><%= model_class.human_attribute_name(:type_of_farm) %></th>
+          <th><%= model_class.human_attribute_name(:website) %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @farms.each do |farm| %>
+          <tr>
+            <td><%= farm.name %></td>
+            <td><%= farm.type_of_farm %></td>
+            <td><%= farm.website %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <%= link_to t('.new', :default => t("helpers.links.new")),
+        new_farm_path,
+        :class => 'btn btn-primary' %>
+  </div>
+</div>

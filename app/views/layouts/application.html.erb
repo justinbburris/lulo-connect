@@ -12,25 +12,23 @@
 </head>
 
 <body>
-  <header class="navbar container-narrow">
-    <nav class="navbar-inner">
-      <div class="container">
-        <%= render 'layouts/navigation' %>
-      </div>
-    </nav>
-  </header>
+  <div id="main" role="main" class="container-narrow">
+    <header class="navbar">
+      <nav class="navbar-inner">
+        <div class="container">
+          <%= render 'layouts/navigation' %>
+        </div>
+      </nav>
+    </header>
 
-  <div id="main" role="main">
-    <div class="container-narrow">
-      <div class="content">
-        <%= render 'layouts/messages' %>
-        <%= yield %>
-      </div>
-      <footer class='footer'>
-        <p class='muted'>Copyright Lulo - 2012</p>
-      </footer>
-    </div> <!--! end of .container -->
-  </div>
+    <div class="content">
+      <%= render 'layouts/messages' %>
+      <%= yield %>
+    </div>
+    <footer class='footer'>
+      <p class='muted'>Copyright Lulo - 2012</p>
+    </footer>
+  </div> <!--! end of .container -->
 
   <%= javascript_include_tag "application" %>
   <%= yield :footer_scripts -%>

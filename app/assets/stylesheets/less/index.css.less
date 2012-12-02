@@ -3,8 +3,13 @@
 
 
 @contentColor: white;
+@backgroundColor: #E3E3E3;
 
 /* Site wide styles */
+body {
+    background-color: @backgroundColor;
+}
+
 footer {
     text-align: center;
 }
@@ -13,17 +18,25 @@ h1 {
     letter-spacing: 1px;
     font-weight: 100;
 }
+
 #main {
+    background-color: @contentColor;
+    padding: 20px;
+}
+
+.content {
     padding-top: 20px;
+    min-height: 700px;
 }
 
 .container-narrow {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 810px;
 }
 
 .jumbotron {
     background: @contentColor;
+    padding-top: 30px;
     text-align: center;
 }
 
