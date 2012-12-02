@@ -1,7 +1,6 @@
 LuloConnect::Application.routes.draw do
   resources :markets
 
-
   resources :plants, only: [:index, :show]
 
   resources :farms
@@ -12,6 +11,7 @@ LuloConnect::Application.routes.draw do
 
   ActiveAdmin.routes(self)
 
+  match 'about' => 'welcome#about'
   root :to => 'welcome#index'
 
   # The priority is based upon order of creation:
